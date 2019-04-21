@@ -1,0 +1,169 @@
+body {
+	background: #ccc;
+}
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	height: 250px;
+}
+.contect
+{
+  height:22px;
+  width:25px;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+background-color: 	#A9A9A9;
+}
+.faucet
+{
+  background: 	#A9A9A9;
+  width: 65px;
+  height: 15px;
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  border-radius: 20px 20px 0px 0px;
+}
+.faucet2
+{
+  background: #696969;
+  width: 80px;
+  height: 17px;
+  position: relative;
+  top: 15px;
+  left: 35px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.faucet3
+{
+  background: #2F4F4F;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  border-radius: 30px;
+}
+.faucet4{
+  background: #A9A9A9;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 40px;
+  left: 28px;
+  border-radius: 30px;
+}
+.faucet5
+{
+  height:18px;
+  width:15px;
+  position: absolute;
+  top: 13px;
+  left: 65px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: 	#696969;
+}
+.faucet6
+{
+  background: 	#A9A9A9;
+  width: 125px;
+  height: 25px;
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  border-radius: 20px 20px 0px 0px;
+}
+.faucet7
+{
+ height:22px;
+  width:25px;
+  position: absolute;
+  top: 90px;
+  left: 165px;
+background-color: 	#A9A9A9;
+}
+.faucet8
+{
+  height:5px;
+  width:28px;
+  position: absolute;
+  top: 110px;
+  left: 164px;
+background-color: #778899;
+}
+.rain{
+	width: 180px;
+	height: 140px;
+}
+.drop {
+	position: relative;
+	float: left;
+	width: 5px;
+	margin: 7px;
+	left: 160px;
+	background: #789;
+	box-shadow: 1px 0.5px 1px 0.5px rgba(0, 0, 0, 0.75);
+	animation: rain 0.6s infinite ease-out;
+}
+.drop:nth-child(1) {
+	height: 15px;
+	top: 88px;
+	animation-delay: -1.0s;
+}
+.drop:nth-child(2) {
+	height: 15px;
+	top: 88px;3
+	animation-delay: -3.5s;
+}
+@keyframes rain {
+	0% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 50px)scale(0.8);
+    
+	}
+}
+.surface {
+	position: relative;
+	width:180px;
+	height: 160px;
+	top: -135px;
+}
+
+.hit {
+	position: absolute;
+	width: 40px;
+	height: .1px;
+	margin: 10px;
+	bottom: -5px;
+	border: 1px solid #456;
+	border-radius: 50%;
+	animation: hit 0.8s infinite ease;
+}
+
+.hit:nth-child(1) {
+	left: 155px;
+	animation-delay: -0.3s;
+}
+
+.hit:nth-child(2) {
+	left: 175px;
+	animation-delay: -0.7s;
+}
+@keyframes hit {
+	0% {
+		opacity: 0.75;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
+}
